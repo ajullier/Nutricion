@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.Windows.Objetives"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Windows"
+        mc:Ignorable="d"
+        Title="Foods" Height="450" Width="800">
+    <Grid Background="#FF152510">
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="71,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Foreground="#FF42C910"><Run Text="Nombre"/><Run Language="es-es" Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Left" Height="22" Margin="130,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="606" Background="Black" Foreground="#FF42C910" BorderBrush="#FF42C910"/>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="128,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="578" Foreground="#FF42C910" FontSize="36" TextAlignment="Center" TextDecorations="Underline" FontStyle="Normal" FontWeight="Bold"><Run Language="es-es" Text="OBJETIVOS"/></TextBlock>
+        <DataGrid x:Name="ObjetivesDataGrid" IsReadOnly="False" HorizontalAlignment="Left" Height="135" Margin="42,243,0,0" VerticalAlignment="Top" Width="694" Background="Black" BorderBrush="#FF42C910" Foreground="#FF42C910" HorizontalGridLinesBrush="#FF96C910" VerticalGridLinesBrush="#FF96C910" RowBackground="Black" AlternatingRowBackground="Black">
+            <DataGrid.Resources>
+                <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="#FF42C910" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </DataGrid.Resources>
+        </DataGrid>
+        <Button x:Name="ButtonSave" Content="GUARDAR" HorizontalAlignment="Left" Height="57" Margin="56,120,0,0" VerticalAlignment="Top" Width="80" Background="#FF42C910" FontWeight="Bold" BorderBrush="#FF42C910" Click="Button_ClickSave"/>
+        <CheckBox x:Name="CheckBoxActive" Content="Activo" HorizontalAlignment="Left" Margin="56,40,0,0" VerticalAlignment="Top" Background="#FF42C910" BorderBrush="#FF15C163" Foreground="#FF42C910"/>
+        <Button x:Name="ButtonGetValues" Content="Traer Información" HorizontalAlignment="Left" Height="26" Margin="186,151,0,0" VerticalAlignment="Top" Width="144" Background="#FF42C910" FontWeight="Bold" BorderBrush="#FF96C910" Click="Button_ClickGetValues"/>
+        <Button x:Name="ButtonModify" Content="Modificar" HorizontalAlignment="Left" Height="26" Margin="375,151,0,0" VerticalAlignment="Top" Width="144" Background="#FF42C910" FontWeight="Bold" BorderBrush="#FF42C910" Click="Button_ClickModify"/>
+        <Button x:Name="Nutritional_Information" Content="Información nutricional" HorizontalAlignment="Left" Height="26" Margin="573,151,0,0" VerticalAlignment="Top" Width="144" Background="#FF42C910" FontWeight="Bold" BorderBrush="#FF42C910" Click="Button_ClickNutritionalInformation"/>
+
+    </Grid>
+</Window>

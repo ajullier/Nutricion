@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF151515">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Menú principal" HorizontalAlignment="Left" Margin="227,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" FontStyle="Normal" Foreground="#FFFFCA3E" Height="60" Width="279" FontSize="36"/>
+        <Button x:Name="Units_Button" Content="Unidades de Medida" HorizontalAlignment="Left" Margin="76,96,0,0" VerticalAlignment="Top" Click="Units_Click" Width="168" Background="#FF96C910" Foreground="Black" Height="19" BorderBrush="Black" FontWeight="Bold"/>
+        <Button x:Name="Food_Button" Content="Alimentos" HorizontalAlignment="Left" Margin="282,96,0,0" VerticalAlignment="Top" Click="Foods_Click" Width="168" Background="#FF42C910" Foreground="Black" Height="19" BorderBrush="Black" FontWeight="Bold"/>
+        <Button x:Name="NutritionalInformation_Button" Content="Información Nutricional" HorizontalAlignment="Left" Height="19" Margin="496,96,0,0" VerticalAlignment="Top" Width="144" Background="#FF10C96D" FontWeight="Bold" BorderBrush="#FF10C96D" Click="NutricionalInformacion_Clic"/>
+        <Button x:Name="PRUEBA" Content="Prueba" HorizontalAlignment="Left" Height="19" Margin="138,159,0,0" VerticalAlignment="Top" Width="144" Background="#FF10C96D" FontWeight="Bold" BorderBrush="#FF10C96D" Click="PRUEBA_CLIC"/>
+        <Button x:Name="Recipes_Button" Content="Recetas" HorizontalAlignment="Left" Height="19" Margin="366,159,0,0" VerticalAlignment="Top" Width="144" Background="#FFCD4B1B" FontWeight="Bold" BorderBrush="#FFCD4B1B" Click="Recipes_Clic"/>
+        <Button x:Name="Objetive_Button" Content="Objetivos" HorizontalAlignment="Left" Margin="241,227,0,0" VerticalAlignment="Top" Click="Objetives_Click" Width="168" Background="#FF42C910" Foreground="Black" Height="19" BorderBrush="Black" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
